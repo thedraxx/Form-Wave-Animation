@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+// colors
+
+$red: rgb(230, 0, 18);
+$redblack: rgba(224, 1, 19, 0.418);
+$white: rgb(255, 247, 247);
+$Light: rgb(255, 138, 138);
+$lightwhite: rgb(255, 255, 255);
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $red ;
+  font-family: 'MuseoModerno', cursive;  height: 100vh,;
+  color:$white;
+  font-size: 16px;	
+  font-style: normal;
+  font-variant: normal;	
+  font-weight: 400;
+  letter-spacing: normal;
+  vertical-align: baseline;	
+  white-space: normal;	
+  word-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden ;
+  margin: 0;
+}
+
+.container{
+  background-color: $redblack;
+  padding: 20px 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+    h1{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    a{
+      text-decoration: none;
+      color: $lightwhite;
+    }
+}
+
+.form-control{
+  position: relative;
+  margin: 20px 0 40px;
+  width: 400px;
+
+  input{
+    background-color: transparent;
+    border: 0;
+    border-bottom:2px $white solid ;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: $white;
+
+      &:focus, &:valid{
+        outline: 0;
+        border-bottom-color: $Light;
+      }
+  }
+
+  label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+
+    span{
+        display: inline-block;
+        font-size: 18px;
+        min-width: 5px;
+        transition: 0.3s ease;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -ms-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        }
+  }
+
+  input:focus + label span,
+  input:valid + label span{
+    color:$Light;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+  }
+}
+
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: $white;
+    padding: 13px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+    &:focus{
+      outline: 0;
+    }
+    
+    &:active{
+      transform: scale(0.98);
+      -webkit-transform: scale(0.98);
+      -moz-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+      -o-transform: scale(0.98);
+    }  
+}
+
+.text{
+  margin-top: 30px;
+}
+
+h3{
+  font-size: 15px;
+  display: block;
+}
+
+
+
